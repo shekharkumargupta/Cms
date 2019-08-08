@@ -1,0 +1,34 @@
+{"text":".",
+ "children": 
+  [
+    {
+        "leaf":false,
+        "expanded":"false",
+        "iconCls":"",
+        "id":1,
+        "text":"Daddy",
+        "description":"Father",
+        "children":[
+                    {
+                        "leaf":false,
+                        "expanded":"false",
+                        "iconCls":"",
+                        "id":2,
+                        "text":"Bobby",
+                        "description":"First Child",
+                        "children":[]
+                    },
+                    {
+                        "leaf":false,
+                        "expanded":"false",
+                        "iconCls":"",
+                        "id":3,
+                        "text":"Rinku",
+                        "description":"Second Child",
+                        "children":[]
+                    }
+                   ]
+        }
+    ],
+    "success":"success"
+}

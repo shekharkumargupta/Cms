@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="CmsPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.opgea.cms.domain.entities.BranchDetails</class>
+    <class>com.opgea.cms.domain.entities.Category</class>
+    <class>com.opgea.cms.domain.entities.City</class>
+    <class>com.opgea.cms.domain.entities.Client</class>
+    <class>com.opgea.cms.domain.entities.ClientContact</class>
+    <class>com.opgea.cms.domain.entities.Company</class>
+    <class>com.opgea.cms.domain.entities.Country</class>
+    <class>com.opgea.cms.domain.entities.Currency</class>
+    <class>com.opgea.cms.domain.entities.Designation</class>
+    <class>com.opgea.cms.domain.entities.Employee</class>
+    <class>com.opgea.cms.domain.entities.Login</class>
+    <class>com.opgea.cms.domain.entities.Opening</class>
+    <class>com.opgea.cms.domain.entities.OpeningDetails</class>
+    <class>com.opgea.cms.domain.entities.Pipeline</class>
+    <class>com.opgea.cms.domain.entities.PipelineHistory</class>
+    <class>com.opgea.cms.domain.entities.Position</class>
+    <class>com.opgea.cms.domain.entities.Qualification</class>
+    <class>com.opgea.cms.domain.entities.Resume</class>
+    <class>com.opgea.cms.domain.entities.ResumeDocument</class>
+    <class>com.opgea.cms.domain.entities.Team</class>
+    <class>com.opgea.cms.domain.entities.Branchh</class>
+    <class>com.opgea.cms.domain.entities.PipelineStage</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cms"/>
+      <property name="javax.persistence.jdbc.password" value="adminadmin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+      <property name="" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>

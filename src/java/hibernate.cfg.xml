@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cms</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">adminadmin</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    
+    <property name="hibernate.hbm2ddl.auto">create</property>
+    
+    <mapping class="com.opgea.cms.domain.entities.Branchh"/>
+    <mapping class="com.opgea.cms.domain.entities.BranchDetails"/>
+    <mapping class="com.opgea.cms.domain.entities.Country"/>
+    <mapping class="com.opgea.cms.domain.entities.City"/>
+    <mapping class="com.opgea.cms.domain.entities.Currency"/>
+    <mapping class="com.opgea.cms.domain.entities.Category"/>
+    <mapping class="com.opgea.cms.domain.entities.Position"/>
+    <mapping class="com.opgea.cms.domain.entities.Qualification"/>
+    <mapping class="com.opgea.cms.domain.entities.Company"/>
+    <mapping class="com.opgea.cms.domain.entities.Designation"/>
+    <mapping class="com.opgea.cms.domain.entities.Team"/>
+    <mapping class="com.opgea.cms.domain.entities.TeamAndOpening"/>
+    <mapping class="com.opgea.cms.domain.entities.Employee"/>
+    <mapping class="com.opgea.cms.domain.entities.EmployeeAndOpening"/>
+    <mapping class="com.opgea.cms.domain.entities.Login"/>
+    <mapping class="com.opgea.cms.domain.entities.PipelineStage"/>
+    <mapping class="com.opgea.cms.domain.entities.Client"/>
+    <mapping class="com.opgea.cms.domain.entities.ClientContact"/>
+    <mapping class="com.opgea.cms.domain.entities.Opening"/>
+    <mapping class="com.opgea.cms.domain.entities.OpeningDetails"/>
+    <mapping class="com.opgea.cms.domain.entities.Resume"/>
+    <mapping class="com.opgea.cms.domain.entities.ResumeDocument"/>
+    <mapping class="com.opgea.cms.domain.entities.Pipeline"/>
+    <mapping class="com.opgea.cms.domain.entities.PipelineHistory"/>
+    <mapping class="com.opgea.cms.domain.entities.EmailMessage"/>
+    <mapping class="com.opgea.cms.domain.entities.EmailConfig"/>
+    <mapping class="com.opgea.cms.domain.entities.Document"/>
+    <mapping class="com.opgea.cms.domain.entities.MassMail"/>
+  </session-factory>
+</hibernate-configuration>
